@@ -1,0 +1,11 @@
+{
+  "minimal-style@@bg1@@dark": "#191919",
+  "minimal-style@@bg2@@dark": "#202020",
+  "minimal-style@@tx1@@dark": "#FFFFFFCC",
+  "minimal-style@@h3": "1.25em",
+  "minimal-style@@h1": "1.875em",
+  "minimal-style@@h2": "1.5em",
+  "minimal-style@@checkbox-shape": "checkbox-square",
+  "minimal-style@@minimal-strike-lists": false,
+  "minimal-advanced@@zoom-off": false
+}

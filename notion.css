@@ -1,0 +1,158 @@
+/*********
+  LAYOUT
+*********/
+
+.internal-embed .markdown-embed {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  margin: 10px 15px 15px 0;
+  max-width: fit-content !important;
+  padding: 0 10px !important;
+}
+
+.internal-embed .markdown-embed .markdown-embed-link {
+  opacity: 1 !important;
+  top: 5px;
+  right: 5px;
+}
+
+/*
+ * Individual "wide" note
+ * Just add `cssClass: wide` in frontmatter
+ */
+
+.markdown-source-view.wide .CodeMirror {
+  max-width: unset !important;
+}
+
+.markdown-source-view.mod-cm6.is-line-wrap.wide .cm-content {
+  max-width: unset !important;
+}
+
+.markdown-source-view.mod-cm6.is-line-wrap.wide .cm-line:not(.HyperMD-table-row) {
+  max-width: unset !important;
+}
+
+.markdown-source-view.mod-cm6.wide:not(.is-rtl) .cm-contentContainer {
+  max-width: unset !important;
+}
+
+.markdown-source-view.mod-cm6.wide.is-rtl .cm-contentContainer {
+  max-width: unset !important;
+}
+
+.markdown-preview-view.wide .markdown-preview-sizer {
+  max-width: unset !important;
+}
+
+
+/*********
+  COLORS
+*********/
+
+/* https://optemization.com/notion-color-guide */
+
+/*
+ * Code
+ */
+
+.cm-inline-code:not(.cm-formatting-code),
+.markdown-rendered code {
+  background-color: rgba(135, 131, 120, 0.15) !important;
+  border-radius: 3px;
+  padding: 0.1em 0em;
+}
+
+.cm-inline-code.cm-formatting-code {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.theme-dark :is(.cm-inline-code, code) {
+  color: #FF7369 !important;
+}
+
+.theme-light :is(.cm-inline-code, code) {
+  color: #E03E3E !important;
+}
+
+/*
+ * Bold
+ */
+
+.theme-dark .cm-strong {
+  filter: brightness(110%);
+}
+
+.theme-light .cm-strong {
+  filter: brightness(90%);
+}
+
+/*
+ * Lists
+ */
+
+.cm-editor .is-collapsed>.collapse-indicator.collapse-icon,
+.collapse-indicator svg {
+  opacity: 1 !important;
+}
+
+.cm-editor .collapse-icon>svg.right-triangle {
+  background-color: var(--text-normal) !important;
+}
+
+/*
+ * Links
+ */
+
+.cm-link,
+.external-link,
+.cm-url {
+  opacity: 0.7 !important;
+}
+
+.cm-formatting-list,
+.list-bullet::after {
+  color: var(--text-normal) !important;
+}
+
+
+/*********
+  FONTS
+*********/
+
+.cm-scroller {
+  --text-editor: "Segoe UI" !important;
+  --link-weight: 400;
+}
+
+.cm-underline {
+  text-decoration: none !important;
+}
+
+.cm-url,
+.external-link,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  text-decoration: none !important;
+  font-weight: 400;
+  border-bottom: 0.05em solid;
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+.internal-link,
+.cm-hmd-internal-link {
+  font-weight: 500;
+}
+
+
+/*********
+  OTHERS
+*********/
+
+/* Hide the escape backslash */
+/* Source: https://discord.com/channels/686053708261228577/702656734631821413/963970189551083541 */
+.cm-line:not(.cm-active)>span.cm-formatting-escape {
+  display: none;
+}
