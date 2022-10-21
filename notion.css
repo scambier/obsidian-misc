@@ -3,12 +3,12 @@
 *********/
 
 .internal-embed .markdown-embed {
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid lightgray !important;
   border-radius: 5px !important;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
-  margin: 10px 15px 15px 0;
+  /* box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4); */
+  /* margin: 10px 15px 15px 5px; */
   max-width: fit-content !important;
-  padding: 0 10px !important;
+  padding: 0 5px !important;
 }
 
 .internal-embed .markdown-embed .markdown-embed-link {
@@ -34,17 +34,24 @@
   max-width: unset !important;
 }
 
-.markdown-source-view.mod-cm6.wide:not(.is-rtl) .cm-contentContainer {
-  max-width: unset !important;
+.markdown-source-view.mod-cm6.wide .cm-line,
+.markdown-source-view.mod-cm6.wide .cm-line.HyperMD-codeblock,
+.markdown-source-view.mod-cm6.wide .cm-line.HyperMD-list-line {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: unset !important;
 }
 
-.markdown-source-view.mod-cm6.wide.is-rtl .cm-contentContainer {
-  max-width: unset !important;
+.markdown-source-view.mod-cm6.wide .cm-contentContainer {
+    max-width: var(--max-width);
+    margin: 0 0 0 calc(50% - var(--max-width)/ 2)!important;
+    padding-left: var(--folding-offset);
 }
 
 .markdown-preview-view.wide .markdown-preview-sizer {
   max-width: unset !important;
 }
+
 
 
 /*********
@@ -89,16 +96,11 @@
 }
 
 /*
- * Lists
+ * Lists & Folds
  */
 
-.cm-editor .is-collapsed>.collapse-indicator.collapse-icon,
-.collapse-indicator svg {
-  opacity: 1 !important;
-}
-
-.cm-editor .collapse-icon>svg.right-triangle {
-  background-color: var(--text-normal) !important;
+.collapse-indicator {
+    opacity: 1 !important;
 }
 
 /*
@@ -108,7 +110,7 @@
 .cm-link,
 .external-link,
 .cm-url {
-  opacity: 0.7 !important;
+  /* opacity: 0.7 !important; */
 }
 
 .cm-formatting-list,
@@ -130,15 +132,26 @@
   text-decoration: none !important;
 }
 
-.cm-url,
+.theme-dark
+:is(.cm-url,
 .external-link,
 .internal-link,
 .cm-hmd-internal-link,
-.cm-link {
+.cm-link) {
   text-decoration: none !important;
-  font-weight: 400;
   border-bottom: 0.05em solid;
   border-color: rgba(255, 255, 255, 0.13);
+}
+
+.theme-light
+:is(.cm-url,
+.external-link,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link) {
+  text-decoration: none !important;
+  border-bottom: 0.05em solid;
+  border-color: rgba(0, 0, 0, 0.13);
 }
 
 .internal-link,
