@@ -4,7 +4,7 @@
   "minimal-style@@tx1@@dark": "#FFFFFFCC",
   "minimal-style@@checkbox-shape": "checkbox-square",
   "minimal-style@@minimal-strike-lists": false,
-  "minimal-style@@embed-strict": false,
+  "minimal-style@@embed-strict": true,
   "minimal-style@@active-line-on": true,
   "minimal-style@@h1-size": "1.875em",
   "minimal-style@@h2-size": "1.5em",
