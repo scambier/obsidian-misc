@@ -1,7 +1,11 @@
+---
+tags: daily
+---
 <%*
 let date = moment(tp.file.title,'YYYY-MM-DD').format("YYYY-MM-DD")
 -%>
 # <% date %>
+
 
 - <% tp.file.cursor() %>
 
