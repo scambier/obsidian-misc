@@ -1,3 +1,16 @@
+## Daily Template
+
+Required plugins:
+- Daily notes (core plugin)
+  - Date format = `[Journal]/YYYY/YYYY-MM/YYYY-MM-DD`
+  - Template file location = `templates/daily`
+- Dataview
+- Templater
+  - Trigger Templater on new file creation = `[x]`
+- Tasks
+
+## Notion.css
+
 Follow these steps to give a Notion-like look to your Obsidian theme.
 
 Base theme & plugins:
