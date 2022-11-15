@@ -43,3 +43,9 @@ fetch(url, { headers: { Authorization } })
 ```
 ~~~
 ![image](https://user-images.githubusercontent.com/3216752/202005723-79404b7f-756d-4254-904d-2a7b2c41b8f7.png)
+
+### 4) Layout tip
+
+If you use the _Minimal_ theme and the _Style Settings_ plugin, you can uncheck "Trim Dataview columns" for a better look
+
+![image](https://user-images.githubusercontent.com/3216752/202014594-f6c2938e-ba60-4d68-8e1b-12448fca4b15.png)
