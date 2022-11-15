@@ -14,7 +14,7 @@ Give it a name, and check (at least) "read:bookmarks". Uncheck the "write" and "
 
 ### 2) Get your access token
 
-Once created, open the settings of your newly created application, and retrieve the access token. **Be careful to not share it!**
+Once created, open the settings of your new application, and retrieve the access token. **Be careful to not share it!**
 
 ![image](https://user-images.githubusercontent.com/3216752/202004890-a529f1ca-9a94-4d85-b739-0fbfcd32119c.png)
 
