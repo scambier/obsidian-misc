@@ -20,7 +20,8 @@ Once created, open the settings of your new application, and retrieve the access
 
 ### 3) Create the DataviewJS query
 
-Replace `YOUR_TOKEN_HERE` with your actual token in the first line
+Replace `YOUR_TOKEN_HERE` with your actual token in the first line.  
+Also replace `https://hachyderm.io` with your instance domain, in the second line.
 
 ~~~
 ```dataviewjs
