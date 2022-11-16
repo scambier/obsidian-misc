@@ -34,7 +34,7 @@ fetch(url, { headers: { Authorization } })
       .array(json)
       .sort((o) => o.created_at, "desc")
       .map((item) => [
-        `<a href="${item.account.display_name}">${item.account.display_name}</a>`,
+        `<a href="${item.account.url}">${item.account.display_name}</a>`,
         `<div style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical">${item.content}</div>`,
         `<a href="${item.url}">🔗</a>`,
       ]);
