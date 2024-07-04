@@ -3,7 +3,7 @@
   Modifications by Simon Cambier, MIT License  
 */
 
-body {
+[data-task] {
     --color-red: #EB999C;
     --color-orange: #EFA076;
     --color-yellow: #E5C890;
