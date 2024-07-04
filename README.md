@@ -1,7 +1,7 @@
 This is a small collection of QoL scripts for Obsidian
 
 
-## Daily Template
+## template-daily.md
 
 Available in two flavours: with the core "Templates" plugin, or with Templater.
 
